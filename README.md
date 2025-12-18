@@ -7,3 +7,6 @@ This is the landing page for the "Escape Room 5-Day Email Course".
 This repository is configured to automatically deploy to Namecheap via GitHub Actions when changes are pushed to the `main` branch.
 
 **Target Directory:** `escaperoombooking.online/`
+
+---
+*Last updated: 2025-12-18*
