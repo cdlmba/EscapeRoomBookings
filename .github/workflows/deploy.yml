@@ -18,5 +18,6 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
           local-dir: ./
-          server-dir: escaperoombooking.online/
+          server-dir: public_html/escaperoombooking.online/
