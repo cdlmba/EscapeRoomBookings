@@ -38,7 +38,7 @@ const DEFAULT_RESPONSE = "That's a great question! While I don't have the specif
 
 document.addEventListener('DOMContentLoaded', () => {
     const trigger = document.getElementById('chatbot-trigger');
-    const window = document.getElementById('chatbot-window');
+    const chatWindow = document.getElementById('chatbot-window');
     const closeBtn = document.getElementById('chatbot-close');
     const inputForm = document.getElementById('chatbot-input-form');
     const input = document.getElementById('chatbot-input');
@@ -46,14 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle Chat Window
     trigger.addEventListener('click', () => {
-        window.classList.toggle('hidden');
-        if (!window.classList.contains('hidden')) {
+        chatWindow.classList.toggle('hidden');
+        if (!chatWindow.classList.contains('hidden')) {
             input.focus();
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
     });
 
     closeBtn.addEventListener('click', () => {
-        window.classList.add('hidden');
+        chatWindow.classList.add('hidden');
     });
 
     // Handle Messages
